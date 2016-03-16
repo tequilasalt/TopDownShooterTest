@@ -55,7 +55,7 @@ public class Joystick : MonoBehaviour {
     }
 
     public float Angle {
-        get { return _angle; }
+        get { return _angle*Mathf.Rad2Deg; }
     }
 
     public Vector2 Axis {

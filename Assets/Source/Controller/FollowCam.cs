@@ -11,8 +11,8 @@ public class FollowCam : MonoBehaviour {
 	void Update () {
 
 	    transform.position = Target.transform.position + PositionOffset;
-	    transform.rotation = Quaternion.LookRotation((Target.transform.position + LookOffset)-transform.position);
-
+	    //transform.rotation = Quaternion.LookRotation((Target.transform.position + LookOffset)-transform.position);
+        transform.LookAt(Target.transform);
     }
 
 }
